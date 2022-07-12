@@ -5,9 +5,7 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>Todo Item</th>
-      <th>Edit Item</th>
-      <th colspan="3"></th>
+
     </tr>
   </thead>
 
@@ -17,7 +15,7 @@
       <% if list.completed %>
 
         <tr class="table-secondary">
-          <td><%= list.description %></td>
+          <td class="striker"><%= list.description %></td>
           <td><%= link_to 'Show', list %>
            <%= link_to 'Edit', edit_list_path(list) %>
            <%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
