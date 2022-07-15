@@ -1,0 +1,13 @@
+<br>
+<% flash.each do |name, msg| %>
+
+  <div class="alert alert-warning alert-dismissible fade show d-flex justify-content-between" role="alert">
+    <%= content_tag(:div, msg) %>
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    <!-- <button class="close" data-dismiss="alert"> <i class="glyphicon glyphicon-remove-circle"></i></button> -->
+
+    </button>
+  </div>
+<% end %>
