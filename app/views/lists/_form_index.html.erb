@@ -11,12 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <div class="form-group ">
+    <%= form.label :description, "Add item below" %>
+    <%= form.text_field :description, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions form-group mt-3">
+    <%= form.submit "Add Todo Item", class: "btn btn-primary" %>
   </div>
 <% end %>
