@@ -1,3 +1,4 @@
+<div class="d-flex">
 <%= form_with(model: @list) do |form| %>
   <% if @list.errors.any? %>
     <div id="error_explanation">
@@ -11,12 +12,9 @@
     </div>
   <% end %>
 
-  <div class="form-group ">
-    <%= form.label :description, "Add item below" %>
+  <div class="form-gorup d-flex">
     <%= form.text_field :description, class: "form-control" %>
-  </div>
-
-  <div class="actions form-group mt-3">
     <%= form.submit "Add Todo Item", class: "btn btn-primary" %>
   </div>
 <% end %>
+  </div>
