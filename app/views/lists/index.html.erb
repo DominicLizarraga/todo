@@ -36,4 +36,6 @@
 <!-- <button type="button" class="btn btn-primary">Primary</button> -->
 
 
-<%= link_to 'Delete tasks already done.', trash_em_path, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Delete tasks already done.', trash_em_path, class: "btn btn-warning", data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Delete all tasks.', trash_em_all_path, class: "btn btn-danger", data: { confirm: 'Are you sure?' } %>
+
